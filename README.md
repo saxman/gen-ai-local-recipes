@@ -1,7 +1,8 @@
 # gen-ai-local
 Notes and tutorials on running large language and diffusion models efficiently on a local computer
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip install jupyterlab
-jupyter lab
+Set up venv with pip:
+uv venv --seed
+
+Get ipykernel dependency
+uv sync

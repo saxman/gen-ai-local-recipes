@@ -1,3 +1,5 @@
+import pynvml
+
 def print_model_info(model):
     print(f'model : size : {model.get_memory_footprint() // 1024 ** 2} MB')
 
