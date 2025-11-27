@@ -241,7 +241,7 @@ wheels = [
 [[package]]
 name = "diffusers"
 version = "0.36.0.dev0"
-source = { git = "https://github.com/huggingface/diffusers#e6d46123091afd58281dc7487c0f6b67055683b9" }
+source = { git = "https://github.com/huggingface/diffusers#01e355516bbeecf1588a24c75321895029ea1123" }
 dependencies = [
     { name = "filelock" },
     { name = "httpx" },

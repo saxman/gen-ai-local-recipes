@@ -1,5 +1,5 @@
 [project]
-name = "gen-ai-local-recipes"
+name = "gen-ai-local"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -22,11 +22,15 @@ diffusers = [
     "diffusers",
     "sentencepiece",
     "protobuf",
+ #   "flash-attn", # disabled since build via uv during sync fails
     "gguf",
 ]
 
 [tool.uv.sources]
 diffusers = { git = "https://github.com/huggingface/diffusers" }
+
+# [tool.uv.extra-build-dependencies]
+# flash-attn = ["torch"]
 
 [build-system]
 requires = ["setuptools"]
